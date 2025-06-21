@@ -68,7 +68,7 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 import matplotlib.pyplot as plt
-from IPython.display import Audio, display
+
 from pydub import AudioSegment
 import numpy as np
 import plotly.graph_objects as go
@@ -375,7 +375,7 @@ signal_vector = np.array(audio.get_array_of_samples(), dtype=np.float64)
 frame_rate = audio.frame_rate
 sample_width = audio.sample_width
 channels = audio.channels
-display(Audio(signal_vector, rate=frame_rate))
+st.audio(signal_vector, rate=frame_rate)
 print(f"Tín hiệu đã được tạo với kích thước: {signal_vector.shape[0]}")
 print(f"Tốc độ khung hình (frame rate): {frame_rate} Hz")
 print(f"Độ rộng mẫu (sample width): {sample_width} bytes")
