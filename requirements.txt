@@ -1,8 +1,5 @@
 streamlit
 numpy
 matplotlib
-soundfile
-pydub
+librosa
 scipy
-plotly
-tqdm
