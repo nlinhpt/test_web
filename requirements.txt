@@ -5,3 +5,4 @@ soundfile
 pydub
 scipy
 plotly
+tqdm
